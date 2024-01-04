@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-box{
+    position: relative;
+    width: 280px;
+    height: 950px;
+    background: #13293D;
+}
+
+.menu-box .logo{
+    padding-top: 60px;
+    padding-left: 54px;
+}
+
+.menu-box .perfil{
+    padding-top: 47px;
+    padding-left: 70px;
+}
+
+.menu > ul{
+    margin-top: 61px;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 37px;
+    width: 100%;
+}
+
+.menu > ul > li{
+    width: 100%;
+    padding-left: 72px;
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu > ul > li:hover{
+    position: relative;
+    width: 100%;
+    color: #A6C72A;
+}
+
+.menu > ul li:hover::after{
+    width: 1.5%;
+}
+
+.menu > ul li::after{
+    content: "";
+    width: 0px;
+    height: 39px;
+    background-color: #A6C72A;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:  0.5s;
+    transform: rotate(180.18deg);
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+}
+
+ul li a.ativo{
+    background-color: #A6C72A;
+}
+
+.menu .sair{
+    margin-top: 120px;
+}
+
+.menu > ul > li > a{
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    gap: 14px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.menu > ul > li > a:hover{
+    color: #A6C72A;
+}
+
+.menu > ul > li > a > img:hover{
+    border-color: #A6C72A;
+}
+
+.container{
+    position: absolute;
+    width: 1135px;
+    height: 976px;
+    left: 280px;
+    top: 0px;
+} 
+
+.cima > h1{
+    position: relative;
+    top: 71px;
+    left: 65px;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(11, 11, 11, 0.65);
+}
+
+.cima .direita{
+    position: relative;
+    top: 43px;
+    left: 865px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.cima .direita > p{
+    color: rgba(11, 11, 11, 0.65);
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.ancoras > ul{
+    position: relative;
+    top: 100px;
+    left: 65px;
+    display: inline-flex;
+    align-items: flex-start;
+    list-style: none;
+    flex-direction :row;
+    gap: 37px;
+    width: 100%;
+}
+
+.ancoras > ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.ancoras > ul li a{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 20px;
+    color: rgba(36, 123, 160, 0.5);
+    position: relative;
+}
+
+.ancoras > ul li a::after{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color: #247BA0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.ancoras > ul li a:hover{
+  color: #247BA0;
+}
+
+.ancoras > ul li a:hover::after{
+    width: 85%;
+}
+
+.container > .adicionar{
+    position: relative;
+    top: 150px;
+    left: 65px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    color: #263238;
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.container > .adicionar:hover{
+    color: #247BA0;
+}
+
+.baixo-box{
+  position: absolute;
+}
+
+.local{
+  height: 0px;
+  width: 0px;
+}
+
+.locais{
+    position: relative;
+    top: 150px;
+    left: 65px;
+    width: 386px;
+    height: 131px;
+    border-radius: 12px;
+    background: rgba(36, 123, 160, 0.10);
+    transition: ease-in-out 0.2s;
+    display: inline-block;
+    margin-top: 26px;
+}
+
+.local .locais:hover{
+    box-shadow:
+                0px 0px #247BA0,
+                0px 0px #247BA0,
+                -3px 0px #247BA0;
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+}
+
+.locais > img{
+    position: relative;
+    top: 27px;
+    left: 28px;
+}
+
+.locais .nome{
+    position: absolute;
+    top: 42px;
+    left: 135px;
+    color: #247BA0;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+
+.locais .endereco{
+    position: absolute;
+    top: 70px;
+    left: 135px;
+    color: #999;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.locais .excluir{
+    position: absolute;
+    top: 100px;
+    left: 231px;
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #CC3334;
+    color: rgba(11, 11, 11, 0.65);
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.locais .editar{
+    position: absolute;
+    top: 100px;
+    left: 301px;
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #77AD78;
+    color: rgba(11, 11, 11, 0.65);
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.baixo-direita > .card{
+    position: relative;
+    top: 170px;
+    left: 562px;
+    width: 516px;
+    height: 555px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card > form > h1{
+    position: absolute;
+    left: 73px;
+    top: 43px;
+    color: #455A64;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card > form > .textfield-2{
+    position: relative;
+    left: 38px;
+    top: 131px;
+    bottom: 465px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    margin-top: 20px;
+}
+
+.card > form > .textfield-2 > label{
+    color: #247BA0;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.card > form > .textfield-2 > input{
+    display: flex;
+    width: 407px;
+    height: 30px;
+    padding: 13px 14px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 2px solid #3F6990;
+    background: #FFF;
+}
+
+.card > form > .textfield-2 > input::placeholder{
+    color: rgba(78, 106, 120, 0.80);
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.maps{
+    position: absolute;
+    top: 380px;
+    left: 38px;
+    display: flex;
+    padding: 12px 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(36, 123, 160, 0.50);
+    color: #247BA0;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    width: 407px;
+    cursor: pointer;
+}
+
+.maps:hover{
+    background-color: #247ba0b6;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+}
+
+.btn-cadastro{
+    position: absolute;
+    top: 466px;
+    left: 353px;
+    width: 120px;
+    height: 42px;
+    border-radius: 8px;
+    background: rgba(119, 173, 120, 0.90);
+    color: #0B0B0B;
+    border: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.btn-cadastro:hover{
+    background: rgba(118, 184, 119, 0.9);
+}

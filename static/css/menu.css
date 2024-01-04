@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.menu-box{
+    position: relative;
+    width: 280px;
+    height: 100vh;
+    background: #13293D;
+}
+
+.menu-box .logo{
+    padding-top: 60px;
+    padding-left: 54px;
+}
+
+.menu-box .perfil{
+    padding-top: 47px;
+    padding-left: 70px;
+}
+
+.menu > ul{
+    margin-top: 61px;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 37px;
+    width: 100%;
+}
+
+.menu > ul > li{
+    width: 100%;
+    padding-left: 72px;
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu > ul > li:hover{
+    position: relative;
+    width: 100%;
+    color: #A6C72A;
+}
+
+.menu > ul li:hover::after{
+    width: 1.5%;
+}
+
+.menu > ul li::after{
+    content: "";
+    width: 0px;
+    height: 39px;
+    background-color: #A6C72A;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:  0.5s;
+    transform: rotate(180.18deg);
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+}
+
+ul li a.ativo{
+    background-color: #A6C72A;
+}
+
+.menu .sair{
+    margin-top: 120px;
+}
+
+.menu > ul > li > a{
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    gap: 14px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.menu > ul > li > a:hover{
+    color: #A6C72A;
+}
+
+.menu > ul > li > a > img:hover{
+    border-color: #A6C72A;
+}
